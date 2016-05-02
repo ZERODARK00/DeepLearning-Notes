@@ -43,3 +43,45 @@
 * stride：特征提取器width、height两方向各自每一次移动的的pixel数，例如strides=1最后提取出来的FeatureMap与原有输入等大（same padding情况下）
 * Valid padding：输出与输入不等大，一般输出小于输入
 * Same padding：输出与输入等大（包括width、height）
+
+###2016-05-02 GET
+**Quora上看到的精彩的回答：**
+
+1.***[How does the <mark>dropout</mark> method work in deep learning?](https://www.quora.com/How-does-the-dropout-method-work-in-deep-learning)***
+
+> **Dropout is a form of regularisation.**
+>
+> How does it work?
+> 
+> It essentially forces an artificial neural network to learn multiple independent representations of the same data by alternately randomly disabling neurons in the learning phase.
+>
+> What is the effect of this?
+> 
+> The effect of this is that neurons are prevented from co-adapting too much which makes overfitting less likely.
+>
+>Why does this happen?
+>
+>The reason that this works is comparable to why using the mean outputs of many separately trained neural networks to reduces overfitting.
+
+**Dropout是正则化的一种方法。**
+
+* 它如何工作？
+
+***Dropout通过禁止学习阶段的神经元来强迫学习同一数据的多种不同的表达***
+
+* 它的影响是？
+
+***阻止了过度的共同适应（协同学习），从而减少了过拟合的可能性***
+
+* 为什么需要它
+
+***减少过拟合***
+
+2.***[Why does batch <mark>normalization</mark> help?](https://www.quora.com/Why-does-batch-normalization-help)***
+>Batch normalization potentially helps in two ways:  faster learning and higher overall accuracy.  The improved method also allows you to use a higher learning rate, potentially providing another boost in speed.
+
+>Why does this work?  Well, we know that normalization (shifting inputs to zero-mean and unit variance) is often used as a pre-processing step to make the data comparable across features.  As the data flows through a deep network, the weights and parameters adjust those values, sometimes making the data too big or too small again - a problem the authors refer to as "internal covariate shift".  By normalizing the data in each mini-batch, this problem is largely avoided.
+
+>Basically, rather than just performing normalization once in the beginning, you're doing it all over place.  Of course, this is a drastically simplified view of the matter (since for one thing, I'm completely ignoring the post-processing updates applied to the entire network), but hopefully this gives a good high-level overview.
+
+

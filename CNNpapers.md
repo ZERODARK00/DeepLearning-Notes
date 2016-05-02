@@ -18,8 +18,8 @@
 
 **两种pooling的方法——adjoint和overlapping的定义**
 
-![MacDown Screenshot](https://github.com/zerodarkzerodark000000/DeepLearning-Notes/blob/master/NotesShortCuts/屏幕快照%202016-05-01%2021.27.11.png?raw=true)
+![Screenshot](https://github.com/zerodarkzerodark000000/DeepLearning-Notes/blob/master/NotesShortCuts/屏幕快照%202016-05-01%2021.27.11.png?raw=true)
 
 **两种产生随机序列方法——随机法和伪随机法**
 
-![MacDown Screenshot](https://github.com/zerodarkzerodark000000/DeepLearning-Notes/blob/master/NotesShortCuts/屏幕快照%202016-05-01%2021.27.29.png?raw=true)
+![Screenshot](https://github.com/zerodarkzerodark000000/DeepLearning-Notes/blob/master/NotesShortCuts/屏幕快照%202016-05-01%2021.27.29.png?raw=true)
